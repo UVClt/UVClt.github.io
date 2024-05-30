@@ -1,0 +1,87 @@
+/*--预设--*/
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+#lyrow,
+#lyrow input,
+#lyrow textarea {
+    font-size: 12px;
+    font-family: 'Microsoft YaHei', '微软雅黑', MicrosoftJhengHei, '华文细黑', STHeiti, MingLiu;
+}
+
+#lyrow {
+    height: 100vh;
+    width: 100vw;
+}
+
+#lyrow div {
+    min-height: 18px;
+}
+
+#lyrow input,
+#lyrow textarea {
+    border: rgb(235, 235, 235) 1px solid;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: 0;
+}
+
+#lyrow input:hover,
+#lyrow textarea:hover {
+    border: 1px solid #6bc1f2;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*--编辑--*/
+
+#lyrow .nav {
+    background-color: rgba(231, 205, 121, 1);
+    width: 100%;
+    justify-content: space-between;
+    display: flex ;
+}
+
+#lyrow .menubox {
+    width: 40%;
+    justify-content: space-around;
+    display: flex ;
+    align-items: center;
+}
+
+#lyrow .loog_brand {
+    width: 20%;
+    justify-content: space-between;
+    display: flex ;
+    height: 80px ;
+    margin: 0 0 0 20px;
+}
+
+#lyrow .loog_img_box {
+    justify-content: center;
+    display: flex ;
+    height: 30px ;
+    align-items: center;
+    width: 80px ;
+}
+
+#lyrow .menu_name {
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    border-bottom: rgb(255, 255, 255, 1) none 2px ;
+}
+
+#lyrow .wu {
+    outline: rgb(255, 255, 255, 1) solid 2px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#lyrow .yijian_img {
+    width: 100%;
+}
