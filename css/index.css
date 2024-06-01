@@ -124,7 +124,7 @@ a{
 }
 
 #lyrow .loogkuang {
-    margin: 0 0 0 20px;
+    margin: 20px 0 0 20px;
 }
 
 #lyrow .loogmingz {
@@ -141,6 +141,7 @@ a{
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+    min-width: 1200px;
 }
 
 #lyrow .biaoti {
@@ -493,6 +494,21 @@ a{
 }
 
 /* 交互效果（伪类选择器） */
-.yi:hover{
+#lyrow .yi:hover{
     font-size: 20px;
+}
+#lyrow .er:hover{
+    font-size: 20px;
+}
+#lyrow .san:hover{
+    font-size: 20px;
+}
+#lyrow .si:hover{
+    font-size: 20px;
+}
+#lyrow .wu:hover{
+    font-size: 20px;
+}
+#lyrow a:hover{
+    font-size: 22px;
 }
