@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <title>加入我们</title>
     <link type="text/css" rel="stylesheet" href="./css/index4.css">
+    <link type="text/css" rel="stylesheet" href="./css/form.css">
 </head>
+
 <body>
     <div id="lyrow">
         <div class="overall">
             <div class="backdrop">
                 <div class="nav">
                     <div class="loog_brand">
-                        <img src="./img/图标.png">
+                        <div class="logo">
+                            
+                        </div>
                     </div>
                     <div class="menubox">
                         <div class="loog_img_box yi">
@@ -36,10 +41,58 @@
             </div>
             <div class="second">
                 <div class="second_img_box">
-                    <img src="./img/加入我们.png" class="jiaru_img">
+                    <div class="form_box">
+                        <div class="form_title_box">
+                            <div class="form_loog">
+                                <div class="fimg"> </div>
+                            </div>
+                            <div class="form_title">
+                                <span class="ftit">开始加入我们</span>
+                            </div>
+                        </div>
+                        <div class="form_input">
+                            <form class="form_boxs" id="form" onsubmit=onSubmit(event)>
+                                <div class="form_item">
+                                    <label>姓名</label>
+                                    <input type="text" name="name" class="text_input" placeholder="请输入姓名(不要出现空格)"
+                                        pattern="^[\u4e00-\u9fffA-Za-z]+$" oninput="setCustomValidity('')"
+                                        oninvalid="setCustomValidity('请输入合法的姓名>_<')" required>
+                                </div>
+                                <div class="form_item">
+                                    <label>邮箱</label>
+                                    <input type="email" class="text_input" placeholder="请输入邮箱地址"
+                                        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                                        oninput="setCustomValidity('')" oninvalid="setCustomValidity('请输入合法的邮箱>_<')"
+                                        required>
+                                </div>
+                                <div class="form_item">
+                                    <label>电话</label>
+                                    <input type="text" name="phonenum" class="text_input" placeholder="请输入电话"
+                                        pattern="^1\d{10}$" oninput="setCustomValidity('')"
+                                        oninvalid="setCustomValidity('请输入合法的电话号码>_<')" required>
+                                </div>
+                                <div class="form_item">
+                                    <label>意向岗位</label>
+                                    <input type="text" name="iob" id="confirmPwd" class="text_input"
+                                        placeholder="请选择意向岗位" pattern="^[\u4e00-\u9fffA-Za-z]+$"
+                                        oninput="setCustomValidity('')" oninvalid="setCustomValidity('输入不合法>_<')"
+                                        required>
+                                </div>
+                                <div class="form_item">
+                                    <button type="reset" onmousemove="move(event)">
+                                        <span>重 置</span>
+                                    </button>
+                                    <button type="submit" value="提 交" onmousemove="move(event)">
+                                        <span>提 交</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>

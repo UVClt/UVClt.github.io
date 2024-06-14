@@ -7,6 +7,9 @@ const titbtuu = tittle_box.querySelectorAll('a');
 const Scroll = all.querySelector('.conscroll');
 const newsimg = all.querySelectorAll('.new_img');
 
+
+
+
 // 获取新闻数据
 function ajax(url){
     let promise = new Promise((resolve,reject)=>{
@@ -27,9 +30,10 @@ function ajax(url){
 }
 
 // 渲染数据
-ajax('../LT教育updat/NewsSystem/info.json')
+ajax('../NewsSystem/info.json')
     .then(response => {
         a = JSON.parse(response);
+        console.log(a);
         for (let i = 0; i <= 2; i++) {
             c[i].innerHTML = `<h1 class="htit">${a.data[i].title}</h1>`;
             d[i].innerHTML = `<span class="textbox">${a.data[i].content}</span>`;

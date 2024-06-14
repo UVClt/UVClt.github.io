@@ -41,6 +41,7 @@ a{
 
 #lyrow .overall{
     min-width: 1200px;
+    height: 100vh;
 }
 
 #lyrow .nav {
@@ -65,6 +66,15 @@ a{
     margin: 0 0 0 20px;
 }
 
+#lyrow .logo{
+    background-image: url('../img/图标.png');
+    height: 65px;
+    width: 200px;
+    background-size: cover;
+    margin-top: 8px;
+}
+
+
 #lyrow .loog_img_box {
     justify-content: center;
     display: flex ;
@@ -86,6 +96,18 @@ a{
     border-radius: 10px 10px 10px 10px;
 }
 
-#lyrow .jiaru_img {
+#lyrow .second_img_box {
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/加入我们.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lyrow .second{
+    height: 100%;
     width: 100%;
 }
+

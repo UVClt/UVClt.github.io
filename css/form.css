@@ -1,0 +1,130 @@
+#lyrow .form_box {
+    height: 480px;
+    width: 640px;
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    margin-left: 50%;
+}
+
+#lyrow .form_boxs {
+    width: 500px;
+}
+
+#lyrow .form_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+#lyrow label {
+    display: block;
+    font-size: 16px;
+    flex: 90px 0 0;
+}
+
+#lyrow label::after {
+    content: "：";
+    margin-right: 6px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#lyrow input.text_input {
+    display: block;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    caret-color: #09f;
+    /*光标颜色*/
+    transition: all 300ms;
+    border-left-width: 5px;
+}
+
+#lyrow input.text_input:valid {
+    border-color: #3c9;
+}
+
+#lyrow input.text_input:invalid {
+    border-color: #e7cd79;
+}
+
+#lyrow button {
+    width: 48%;
+    height: 40px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    background: #467897;
+    color: #fff;
+}
+#lyrow button[type=reset] {
+    background: #e7cd79;
+}
+#lyrow button:first-child {
+    margin-right: 4%;
+}
+#lyrow span {
+    position: relative;
+    pointer-events: none;
+    font-size: 16px;
+}
+
+#lyrow .form_item > label{
+    color: #fff;
+}
+
+#lyrow .form_title {
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    display: flex !important;
+    justify-content: center;
+}
+
+#lyrow .form_input {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lyrow .form_loog {
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    display: flex !important;
+    align-items: center;
+}
+
+#lyrow .form_title_box {
+    width: 100%;
+    height: 15%;
+    justify-content: space-between;
+    display: flex !important;
+}
+
+#lyrow .fimg {
+    width: 80%;
+    height: 70%;
+    background-image: url(http://www.58html.com/folder/imgcss/202406/c0c2cfa4f0947e80d0a81f6f6f375fe9.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#lyrow .ftit {
+    color: rgba(255, 255, 255, 1);
+    font-size: 40px;
+    font-weight: normal;
+}

@@ -4,14 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>添加内容</title>
+    <link type="text/css" rel="stylesheet" href="../css/form.css">
+    <link type="text/css" rel="stylesheet" href="../css/news.css">
 </head>
 <body>
-    <form action="./add.php" method="post" enctype="multipart/form-data">
+    <!-- <form action="./add.php" method="post" enctype="multipart/form-data">
         <span>标题：</span><input type="text" name="title"><br /><br />
         <span>内容：</span><textarea name="content" rows="5" cols="30"></textarea><br /><br />
         <label for="file">文件名：</label>
         <input type="file" name="file" id="file"><br>
         <input type="submit" name="submit" value="提交">
-    </form>
+    </form> -->
+    <div id="lyrow">
+        <div class="background_image_box">
+            <div class="news_box">
+                <div class="form_title_box">
+                    <div class="form_loog">
+                        <div class="fimg"> </div>
+                    </div>
+                    <div class="form_title">
+                        <span class="ftit">添加新闻</span>
+                    </div>
+                </div>
+                <div class="form_input">
+                    <form class="form_boxs" id="form" action="./add.php" method="post" enctype="multipart/form-data">
+                        <div class="form_item">
+                            <label>新闻标记</label>
+                            <input type="text"
+                                name="nameid"
+                                class="text_input"
+                                placeholder="只用于标记，仅管理员可见"
+                                pattern="^[\u4e00-\u9fffA-Za-z0-9]+$"
+                                oninput="setCustomValidity('')"
+                                oninvalid="setCustomValidity('请输入合法的标记>_<')"
+                                required>
+                        </div>
+                        <div class="form_item">
+                            <label>标题</label>
+                            <input type="text"
+                                name="title"
+                                class="text_input"
+                                placeholder="请输新闻标题"
+                                pattern="^[\u4e00-\u9fffA-Za-z0-9]+$"
+                                oninput="setCustomValidity('')"
+                                oninvalid="setCustomValidity('请输入合法的邮箱>_<')"
+                                required>
+                        </div>
+                        <div class="form_item">
+                            <label>内容</label>
+                            <input type="text"
+                                name="content"
+                                class="text_input"
+                                placeholder="请输入新闻内容"
+                                pattern="^\s*[^\s].*$"
+                                oninput="setCustomValidity('')"
+                                oninvalid="setCustomValidity('请输入合法的内容>_<')"
+                                required>
+                        </div>
+                        <div class="form_item">
+                            <label>新闻图片</label>
+                            <input type="file"
+                                name="file"
+                                class="text_input"
+                                placeholder="请选择意向岗位"
+                                pattern="^[\u4e00-\u9fffA-Za-z0-9]+$"
+                                oninput="setCustomValidity('')"
+                                oninvalid="setCustomValidity('请上传图片>_<')"
+                                required>
+                        </div>
+                        <div class="form_item">
+                            <button type="reset">
+                                <span>重 置</span>
+                            </button>
+                            <button type="submit" value="提 交" name="submit">
+                                <span>提 交</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
